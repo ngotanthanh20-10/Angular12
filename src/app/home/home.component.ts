@@ -17,6 +17,9 @@ export class HomeComponent implements OnInit {
     { name: 'Grape', price: 14, sales: true },
     { name: 'Orange', price: 18, sales: true },
   ];
+  public cities = [{
+    city: "An Giang"
+  }]
 
   constructor() {}
 

@@ -24,6 +24,7 @@
       <th>Name</th>
       <th>Price</th>
       <th>Sales</th>
+      <th>Price Sales</th>
     </tr>
     <tr *ngFor="let item of fruits; let i = index">
       <td>{{ i + 1 }}</td>
@@ -33,6 +34,7 @@
           item.price | currency
         }}</span>
       </td>
+      <td>{{ item.sales | onSales }}</td>
       <td *ngIf="item.sales">Sales !!!</td>
     </tr>
   </table>
